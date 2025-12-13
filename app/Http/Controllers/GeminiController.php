@@ -8,15 +8,16 @@ use Gemini\Laravel\Facades\Gemini; // .envファイルに書いたAPIKeyの読�
 
 class GeminiController extends Controller // GeminiControllerクラス
 {
-    public function index(Request $request) //
+    public function index(Request $request) 
     {
-        return view('index');
+        return view('index'); // /indexにGeminiからの回答を乗せる
     }
 
     public function post(Request $request)
     {
+        /* バリデーション */
         $request->validate([
-            'sentence' => 'required',
+            'sentence' => 'required', // 入力しないと送信ボタンを押せないようにする
         ]);
 
         $sentence = $request->input('sentence');
