@@ -1,0 +1,86 @@
+/* public/css/index.css */
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* フォームセクション */
+.form-section {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.form-section form {
+    display: flex;
+    width: 100%;
+}
+
+.form-section input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
+
+/* 結果セクション */
+.result-section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.result-section .question {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.result-section .response-text pre {
+    white-space: pre-wrap; /* 改行とスペースを保持 */
+    background-color: #f0f0f5;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 5px solid #007bff;
+}
+
+.placeholder-text {
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
